@@ -1,0 +1,36 @@
+Tags
+Use
+(<HTML>. . . </HTML>)*	The entire HTML document
+(<HEAD> . . . </HEAD>)*	The head, or prologue, of the HTML document
+(<BODY> . . . </BODY>)*	All the other content in the HTML document
+<TITLE> . . . </TITLE>	The title of the document
+<H1> . . . </H1>	First-level heading large text size
+<H2> . . . </H2>	Second-level heading
+<H3> . . . </H3>	Third-level heading
+<H4> . . . </H4>	Fourth-level heading
+<H5> . . . </H5>	Fifth-level heading
+<H6> . . . </H6>	Sixth-level heading small text size
+<P> . . . (</P>)*	Paragraph Hitting a return in the HTML file will not make a new paragraph when the file is viewed. You need to use this tag to make a new paragraph.
+<BR>	Line Break This tag will show a blank line.
+<HR>	Horizontal Rule Creates a horizontal line on the page.
+<!- . . . ->	Comment The comments you write in the middle will not show up on the page when viewed.
+<A href=> . . . </A>	Link (A=Anchor) links the current HTML file to another file. Example: <A HREF="menu.html">Go back to Main Menu</A> This will display the file which is named in the quotes. The name of the link, which is the colored words you actually see goes between the first > and the second <. Here, the name of the link is Go back to the Main Menu Another example is : <A HREF="http://www.ilt.columbia.edu/">ILTNet</A> This link will take you to another page on the Internet. You can see the Internet address in the quotes.
+<DL>
+<DT>
+<DD>
+</DL>
+Definition list Put <DL> at the beginning, </DL> at the end, and <DT> for each :definition term" in the list. Use <DD> for each "definition" of each term. The definition will be indented.
+<DL>
+<DT>Item One
+<DD>Item One Definition
+</DL>
+<IMG SRC="image.gif">	Inline Image Put the name of the graphic (.gif or .jpg) in the quotes.
+<B> . . . </B>	Bold Makes text bold
+<I> . . . </I>	Italic Makes text italic
+<font size="+3"...</font>	Font Size This tag is used to change the size of the font. It is better than using the header tag to make the font appear bigger.
+<table>
+<TR>
+<TD>
+</TD>
+</TR>
+</Table>

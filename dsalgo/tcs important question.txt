@@ -1,0 +1,241 @@
+30 Most Asked C Programming Interview Questions & Programs in Technical Interviews
+Published on 09 Mar 2020
+In this article, we will be discussing 30 most asked C programming interview questions during technical interview rounds of various companies. The below given C interview questions range from Easy to Advanced Level. Even if you are a beginner in C, these C programming tricky interview questions will help you understand and revise better.Also, after you finish going through this, you can also check out
+
+
+
+Data Structures interview questions and answers.
+C++ Interview Questions & Answers
+
+
+C Programming Interview Questions with Answers
+
+
+
+
+
+To receive placement preparation tips and placement related updates on various companies, come join the largest 2020 Passouts Community on FACEs Telegram and WhatsApp, and take your placement preparation to the next level.Join here:Telegram:https://t.me/placements2020WhatsApp:http://bit.ly/2MgoYMR
+
+
+
+1) What are the key features of C programming language?
+
+C is a platform-dependent language.
+C offers the possibility to break down a large program into small modules.
+Also, the possibility of a programmer to control the language.
+C comes with support for system programming and hence it compiles and executes with high speed when compared to other high-level languages.
+
+
+2) What happens when you compile a program in C? (tricky question)Whenever you compile a program in C, a multi-stage process takes places. The process is as shown below.Click here to know the complete process & function of compiler, assembles, linker and loader in this process.c programming interview questions on stages of compilation of a c program3) What is the use of header files in C?
+
+Header files contain the definitions and set of rules of the functions being used in the programs.
+
+
+
+For example, when you use printf() or scanf() in your program, you nee to include stdio.h library function. Else your compiler will show an error. This is because, the standard input and output functions printf() and scanf() are stored in this header file.So similarly every header file stores a set of predefined functions which makes it easy to program.
+
+
+
+4) What happens if a headerfile is included twice? (tricky question)
+
+
+
+When the preprocessor sees a #include, it replaces the #include with the contents of the specified header. By using include guard(#), you can prevent a header file from being included multiple times during the compilation process. So basically, if a header file with proper syntax is included twice, the second one gets ignored.
+
+
+
+5) Can a program be compiled without the main() function?
+
+Yes, compilation is possible, but the execution is not possible. However, if you use #define, we can execute the program without the need of main().For Example:
+
+#include<stdio.h>#define startmainvoidstart(){printf("Hi");}
+C Programming Interview Questions on Data Types, Variables & keywords
+
+
+6) What are the basic data types in C?
+
+Int Used to represent a number (integer)
+Float Used to represent a decimal number
+Double Used to represent a decimal number with highest precision(digits after the decimal point)
+Char Single character
+Void Special purpose type without any value
+
+
+7) Is it possible to store 32768 in an int data type variable? (Tricky question)
+
+
+
+Int data type is capable of storing values between 32768 to 32767. To store 32768 a modifier has to be used with int data type and hence Long Int can be used. If there are no negative values, unsigned int can also be used.
+
+
+
+8) What are the various Keywords used in C?
+
+
+
+There are 32 various keywords in C and each of them performs a defined function. These keywords are also called as Reserved words.Click here to know the functions of the below keywords.
+
+
+
+
+
+keywords based c programming interview questions
+
+9) What is the difference between static & global variables?
+
+
+
+Global variables are variables which are defined outside the function. The scope of global variables begins at the point where they are defined and lasts till the end of the file/program. Whereas, static global variables are private to the source file where they are defined and do not conflict with other variables in other source files which would have the same name.
+
+
+
+10) What is Memory Leak in C?
+
+
+
+A memory leak occurs when programmers create a memory in the heap and forget to delete it.It decreases the efficiency of the performance of the system.11) What is Static and Dynamic memory allocation?
+
+Static memory allocation happens at compile-time, and memory can't be increased while executing the program.
+Whereas in case of dynamic memory allocation, this happensat runtime and memory can be increased while executing the program.
+Static memory allocation is used in arrays & dynamic memory allocation is used in Linked Lists.
+Static memory allocation uses more memory space to store a variable.
+C Programming Interview Questions on Operators, Input/output
+
+
+12) What is the difference between ++a and a++?
+
+
+
+++a is called prefix increment. First, the value stored in the variable a gets incremented and then gets assigned to the same variable. Whereas, a++' is called postfix increment. The value stored in the variable a gets incremented after the execution of the particular line.
+
+
+
+13) What is the difference between while (0) and while (1)?
+
+
+
+While(1) is an infinite loop which will run till a break statement occurs. Similarly, while(2), while(3), while(255) etc will all give infinite loops only.Whereas, While(0) does the exact opposite of this. When while(0) is used, it means the conditions will always be false. Thus, as a result, the program will never get executed.
+
+C Programming Interview Questions on Arrays, Strings, Pointers & Functions
+
+
+14) What is a Dangling Pointer in C?
+
+
+
+A pointer pointing to a dereferenced memory location is called dangling pointer. i.e. pointer pointing to the memory location which is deleted. There are three different ways where a pointer can act as a dangling pointer.
+
+De-allocation of memory
+When the local variable is not static
+When the variable goes out of scope
+
+
+To understand in detail, check this - Dangling pointer in c with examples
+
+
+
+15) What is the difference between the Void and Null Pointer?
+
+
+
+Null pointers generally do not point to a valid location. A pointer is initialized as NULL if we are not aware of its value at the time of declaration.Whereas, Void pointers are general-purpose pointers which do not have any type associated with them and can contain the address of any type of variable. So basically, the type of data that it points to can be anything.>> Check out the detailed difference between null and void pointers.
+
+
+
+16) What is the difference between Pass by value and Pass by reference?
+
+
+
+In pass by value, changes made to the arguments in the called function will not be reflected in the calling function. Whereas in pass by reference, the changes made to the arguments in the called function will be reflected in the calling function.The below image will help you get a good understanding, however, click here to know the difference between Pass by value and Pass by reference in detail.
+
+c programming interview question on pass by value and pass by reference
+
+
+
+
+
+
+
+17) What is a pointer on a pointer in C programming language?
+
+
+
+A pointer variable that contains the address of another pointer variable is called as a pointer on a pointer. For example, consider the following program.
+
+int main(){ int v1 = 54; int *pointer2;// pointer for var int **pointer1;// double pointer for ptr2 pointer2 = &v1;// storing address of var in ptr2  pointer1 = &pointer2;// Storing address of ptr2 in ptr1   printf("Value of v1 = %dn", v1); printf("Value of v1 using single pointer = %dn", *pointer2 ); printf("Value of v1 using double pointer = %dn", **pointer1);return 0;}
+
+
+
+18) Difference between malloc() and calloc() functions?
+
+
+
+mallocand callocare library functions that allocate memory dynamically, which means that memory is allocated during the runtime from the heap segment.Malloc and Calloc differ in the number of arguments used, their initialization methods and also in the return values. Check out the detailed differences here.
+
+
+
+19) What is the difference between Arrays and Pointers?
+
+
+
+A few differences between Arrays and Pointers are:
+
+An array is a collection of elements of similar data type whereas the pointer is a variable that stores the address of another variable.
+An array size decides the number of variables it can store whereas; a pointer variable can store the address of onlyone variable in it.
+Arrays can be initialized at the definition, while pointers cannot be initialized at the definition.
+>> Click here to know more differences
+
+
+
+20) What is the difference between a structure and a Union?
+
+All the members of a structure can be accessed simultaneously but union can access only one member at a time
+Altering the value of a memberwill not affect the other members of the structure but where it affects the members of a union
+Lesser memory is needed for a union variable than a structure variable of the same type
+>> More details
+
+
+
+C Interview Programs with Solutions
+
+
+21)Write a program to print "hello world" without using a semicolon?
+
+
+
+#include <stdio.h>voidmain(){if(printf("helloworld")){}}
+
+
+22) How to swap two numbers without the use of the third variable?
+
+﻿#include<stdio.h>main(){inta=1,b=8;printf("Beforeswappinga=%db=%d",a,b);a=a+b;//a=30b=a-b;//b=10a=a-b;//a=20printf("Afterswappinga=%db=%d",a,b);getch();}
+
+
+23) Program toreverse a given number in C
+
+24) Program to print factorial of a number
+
+25) PrintFibonacci series up ton
+
+26) Print all theprime numbers in a given range
+
+27) Check if a given number is anArmstrong number or not.
+
+28) Replace all0s with 1 in a given integer.
+
+29) Pyramid pattern using stars
+
+
+
+*
+* *
+* * *
+* * * * 
+* * * * *
+* * * * * * 
+          *
+        *   *
+      *   *   *
+    *   *   *   *
+  *   *   *   *   *
+*   *   *   *   *   *
